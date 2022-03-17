@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 | Page 3</title>
+</head>
+<body>
+    <header>
+        <center><h1 style="margin-top: 0; margin-bottom: 0;">HTML</h1> <h4> A simple website built using only HTML to show all the it has to offer</h4>
+        <a href="Home.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">HOME</button></a>
+        <a href="Page1.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">TAGS</button></a>
+        <a href="Page2.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">LISTS</button></a>
+        <a href="Page3.html"><button style="height:30px; width:100px; margin-right:2px; background-color: black; color: white; border-color: white;">TABLES</button></a>
+        <a href="Page4.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">FORMS</button></a></center>
+    </header>
+    <p>Tables can be used for more than just displaying a table of data. Tables can also be used as a formatting tool. The data in a table can be text or images.
+    The <b>&lt;table&gt;</b> tag lets the browser know that a table follows.</p>
+    <h3>Table Elements:</h3> 
+    <p>The attributes to the <b>&lt;table&gt;</b> element apply to the table itself not the data displayed in the table.</p>
+    <dl>
+        <dt><b>Table Row:</b></dt>
+        <dd>The <b>&lt;tr&gt;</b> tag defines table rows. The table header and table data elements are contained inside this element.</dd>
+        <dt><b>Table Header:</b></dt>
+        <dd>The <b>&lt;th&gt;</b> tag defines table columns, with each occurrence within a table row defining a new column. It is a cell element that indentifies the data to be displayed in the header of table.</dd>
+        <dt><b>Table Data:</b></dt>
+        <dd>The <b>&lt;td&gt;</b> tag defines table columns, with each occurrence within a table row defining a new column. It is a cell element that indentifies the data to be displayed in the rows of the table..</dd>
+        </dl>
+    <h3>Table Attributes:</h3> 
+    <p>The attributes to the <b>&lt;table&gt;</b> element apply to the table itself not the data displayed in the table.</p>
+    <dl>
+        <dt><b> Align:</b></dt>
+        <dd>This attribute specifies the alignment of the table.</dd>
+        <br><dt><b> Width:</b></dt>
+        <dd>This attribute specifies the width of the table, not columns.</dd>
+        <br><dt><b> Border:</b></dt>
+        <dd>The border attribute specifies that the border of the table should be drawn.</dd>
+        <br><dt><b> Cellspacing:</b></dt>
+        <dd>This attribute specifies the spacing between cells</dd>
+        <br><dt><b> Cellpadding:</b></dt>
+        <dd>This attribute specifies padding within cells.</dd>
+        </dl>
+
+    <h3>EXAMPLE TABLE: (With cellspacing and cellpadding)</h3>
+    <Center><table cellspacing="10" cellpadding="10">
+        <tr>
+            <th style="padding:0px 20px;">Heading 1</th>
+            <th style="padding:0px 20px;">Heading 2</th>
+            <th style="padding:0px 20px;">Heading 3</th>
+            <th style="padding:0px 20px;">Heading 4</th>
+            <th style="padding:0px 20px;">Heading 5</th>
+        </tr>
+        <tr>
+            <td>Row 1 Column 1</td>
+            <td>Row 1 Column 2</td>
+            <td>Row 1 Column 3</td>
+            <td>Row 1 Column 4</td>
+            <td>Row 1 Column 5</td>
+        </tr>
+        <tr>
+            <td>Row 2 Column 1</td>
+            <td>Row 2 Column 2</td>
+            <td>Row 2 Column 3</td>
+            <td>Row 2 Column 4</td>
+            <td>Row 2 Column 5</td>
+        </tr>
+    </table></Center>
+    <h3>EXAMPLE TABLE: (Without cellspacing and cellpadding)</h3>
+    <Center><table>
+        <tr>
+            <th style="padding:0px 20px;">Heading 1</th>
+            <th style="padding:0px 20px;">Heading 2</th>
+            <th style="padding:0px 20px;">Heading 3</th>
+            <th style="padding:0px 20px;">Heading 4</th>
+            <th style="padding:0px 20px;">Heading 5</th>
+        </tr>
+        <tr>
+            <td>Row 1 Column 1</td>
+            <td>Row 1 Column 2</td>
+            <td>Row 1 Column 3</td>
+            <td>Row 1 Column 4</td>
+            <td>Row 1 Column 5</td>
+        </tr>
+        <tr>
+            <td>Row 2 Column 1</td>
+            <td>Row 2 Column 2</td>
+            <td>Row 2 Column 3</td>
+            <td>Row 2 Column 4</td>
+            <td>Row 2 Column 5</td>
+        </tr>
+    </table></Center>
+
+    <h3>EXAMPLE TABLE: (Showcasing rowspan and colspan)</h3>
+    <Center><table  cellspacing="5" cellpadding="5" border="1">
+        <tr>
+            <th style="padding:0px 20px;">Heading 1</th>
+            <th style="padding:0px 20px;">Heading 2</th>
+            <th style="padding:0px 20px;">Heading 3</th>
+            <th style="padding:0px 20px;">Heading 4</th>
+            <th style="padding:0px 20px;">Heading 5</th>
+        </tr>
+        <tr>
+            <td colspan="2">Row 1 Column 1 (Spanning two columns)</td>
+            <td>Row 1 Column 2</td>
+            <td>Row 1 Column 3</td>
+            <td>Row 1 Column 4</td>
+            <td rowspan="2">Row 1 Column 5 <br>(Spanning two rows)</td>
+        </tr>
+        <tr>
+            <td>Row 2 Column 1</td>
+            <td>Row 2 Column 2</td>
+            <td>Row 2 Column 3</td>
+            <td>Row 2 Column 4</td>
+            <td>Row 2 Column 5</td>
+        </tr>
+        <tr>
+            <td colspan="2">Row 3 Column 1 (Spanning two columns)</td>
+            <td>Row 3 Column 2</td>
+            <td>Row 3 Column 3</td>
+            <td>Row 3 Column 4</td>
+            <td>Row 3 Column 5</td>
+        </tr>
+    </table></Center>
+    <footer>
+        <br>
+        Hope you have a great time taking this first step into the world of web design ☺
+    </footer>    
+</body>
+</html>

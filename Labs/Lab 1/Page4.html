@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 | Page 4</title>
+</head>
+<body>
+    <header>
+        <center><h1 style="margin-top: 0; margin-bottom: 0;">HTML</h1> <h4> A simple website built using only HTML to show all the it has to offer</h4>
+        <a href="Home.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">HOME</button></a>
+        <a href="Page1.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">TAGS</button></a>
+        <a href="Page2.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">LISTS</button></a>
+        <a href="Page3.html"><button style="height:30px; width:100px; margin-right:2px; background-color: white; color: black; border-color: black;">TABLES</button></a>
+        <a href="Page4.html"><button style="height:30px; width:100px; margin-right:2px; background-color: black; color: white; border-color: white;">FORMS</button></a></center>
+    </header>
+    <p>An HTML form is used to collect user input, which is most often sent to a server for processing.
+    The HTML <b>&lt;form&gt;</b> tag is used to create an HTML form for user input. It is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+    <p>The two most common methods used in forms are: GET and POST.</p>
+    <h3>The GET Method</h3>
+    <p>GET is used to request data from a specified resource. The query string (name/value pairs) is sent in the URL of a GET request.
+        GET requests can be cached and bookmarked.They have length restrictions and are only used to request data (not modify). 
+        <br><b>The GET method should never be used when dealing with sensitive data as GET requests remain in the browser history and become visible in the url.</b> </p>
+    <h3>The POST Method</h3>
+    <p>GET is used to send data to a server to create/update a resource. The data sent to the server with POST is stored in the request body of the HTTP request.
+        POST requests are never cached and cannot be bookmarked.They have no restrictions on data length. 
+        <br><b>The POST method is used when dealing with sensitive data as POST requests do not remain in the browser history or become visible in the url.</b> </p>
+    <h3>Example FORM:</h3>
+      <form method="post">
+          <table>
+              <tr><td align="right">First Name : </td><td><input type="text" name="firstname" style="margin-bottom:10px" required size="22"></td></tr>
+              <tr><td align="right">Last Name : </td><td><input type="text" name="lastname" style="margin-bottom:10px" required size="22"></td></tr>
+              <tr><td align="right">Email : </td><td><input type="email" name="email" style="margin-bottom:10px" required size="22"></td></tr>
+              <tr><td align="right">Password : </td><td><input type="password" name="password" style="margin-bottom:10px" required min="6"size="22"></td></tr>
+              <tr><td>Confirm Password : </td><td><input type="password" name="confirm" style="margin-bottom:10px" required min="6"size="22"></td></tr>
+              <tr><td  align="right">Birthday : </td><td><input type="date" name="birthday" style="margin-bottom:10px; width:186px;"></td></tr>
+              <tr><td align="right">Gender :</td><td><input type="radio" name="Gender" style="margin-bottom:10px" value="male">Male<input type="radio" name="Gender" value="female">Female<input type="radio" name="Gender" value="oth">Other<br></td></tr>
+              <tr><td></td><td><input type="submit" value="Register" style="height:30px; width:90px; margin-right:10px;"><input type="reset" style="height:30px; width:90px"></td></tr>
+          </table>
+    </form>
+    <footer>
+        <br>
+        Hope you have a great time taking this first step into the world of web design ☺
+    </footer>
+</body>
+</html>
