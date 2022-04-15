@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        .tab{
+            color: white;
+            font-size: x-large;
+            font-family: cursive;
+            font-style: italic;
+            text-align: center;
+            width: 6%;
+            padding: 1%;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 5%;
+            cursor: pointer;
+        }
+        li.tab-r{
+            background-color: rgb(255, 102, 99);
+        }
+        li.tab-o{
+            background-color: rgb(254, 177, 68);
+        }li.tab-y{
+            background-color: rgb(253, 253, 151);
+        }li.tab-g{
+            background-color: rgb(158, 224, 158);
+        }li.tab-b{
+            background-color: rgb(158, 193, 207);
+        }li.tab-i{
+            background-color: rgb(204, 153, 201);
+        }
+        li.tab-v{
+            background-color: rgb(251, 185, 197);
+        }
+    </style>
+</head>
+<body>
+    <ul style="display: flex; justify-content: center;" type="none">
+        <li class="tab tab-r" onmouseover="red()" onmouseleave="blank()">R</li>
+        <li class="tab tab-o" onmouseover="orange()" onmouseleave="blank()">O</li>
+        <li class="tab tab-y" onmouseover="yellow()" onmouseleave="blank()">Y</li>
+        <li class="tab tab-g" onmouseover="green()" onmouseleave="blank()">G</li>
+        <li class="tab tab-b" onmouseover="blue()" onmouseleave="blank()">B</li>
+        <li class="tab tab-i" onmouseover="indigo()" onmouseleave="blank()">I</li>
+        <li class="tab tab-v" onmouseover="violet()" onmouseleave="blank()">V</li>
+    </ul>
+    <script>
+       function red(){ document.body.style.background = "rgb(255, 102, 99)"; }
+       function orange(){ document.body.style.background = "rgb(254, 177, 68)"; }
+       function yellow(){ document.body.style.background = "rgb(253, 253, 151)"; }
+       function green(){ document.body.style.background = "rgb(158, 224, 158)"; }
+       function blue(){ document.body.style.background = "rgb(158, 193, 207)"; }
+       function indigo(){ document.body.style.background = "rgb(204, 153, 201)"; }
+       function violet(){ document.body.style.background = "rgb(251, 185, 197)"; }
+       function blank(){ document.body.style.background = "white"; }
+    </script>
+</body>
+</html>

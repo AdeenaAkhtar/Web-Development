@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        .box{
+            border-style: solid;
+            border-color: #9ec1cf;
+            width: 35%;
+            padding: 3%;
+            margin: 10% 30%;
+        }
+        #radius , #volume{
+            width: 95%;
+            font-style: bold;
+            margin-bottom: 3%;
+            line-height: 25px;
+        }
+        #submit{
+            width: 90%;
+            padding: 1.5%;
+            margin: 0 3%;
+            background-color: #9ec1cf;
+            color: white;
+            border: solid aliceblue;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <p>Input radius value and get the volume of the sphere...</p>
+    <form method="post" id="VolumeForm">
+        <label for="radius">Radius</label><input type="text" name="radius" id="radius" required>
+        <label for="volume">Volume</label><input type="text" name="volume" id="volume" readonly>
+        <input type="submit" value="Calculate" id="submit">    
+    </form>
+   </div>
+    <script>
+        function volume()
+        {
+            var volume;
+            var radius = document.getElementById('radius').value;
+            radius = Math.abs(radius);
+            volume = (4/3) * Math.PI * Math.pow(radius, 3);
+            volume = volume.toFixed(2);
+            document.getElementById('volume').value = volume;
+            return false;
+        } 
+window.onload = document.getElementById('VolumeForm').onsubmit = volume;
+    </script>
+</body>
+</html>

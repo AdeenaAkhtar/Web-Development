@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="task2.css">
+    <title>Help</title>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">Help</a>
+        <div class="header-right">
+          <a href="#">What's New</a>
+          <a class="active" href="#">Contact Help</a>
+        </div>
+      </div>
+      <div class="top">
+          <p class="blue">Contact Us</p>
+          <p>Contact the Help Team</p>
+      </div>
+      <div>
+      <form method="post">
+        <ul class="form">
+            <li>
+                <label>What can we help you with?</label>
+                <select name="field1" class="field">
+                <option hidden disabled selected value></option>
+                <option value="Complaint">Complaint</option>
+                <option value="Query">Query</option>
+                <option value="Other">Other</option>
+                </select>
+            </li>
+            <li>
+                <label>Your name:</label>
+                <input type="text" name="field2" placeholder="Example: Adeena Akhtar" class="field" />
+            </li>
+            <li>
+                <label>Email address associated with your account:</label>
+                <input type="email" name="field3" placeholder="Example: Adeena@gmail.com" class="field" />
+            </li>
+            <li>
+                <label>Subject:</label>
+                <input type="text" name="field4" class="field" />
+            </li>
+            <li>
+                <label>Your Message</label>
+                <textarea name="field5" id="field5" class="field field-textarea" placeholder="Please write your query or a description of your complaint here"></textarea>
+            </li>
+            <li>
+                <input type="submit" value="Submit" />
+            </li>
+        </ul>
+        </form>
+      </div>
+</body>
+</html>

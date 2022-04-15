@@ -1,0 +1,46 @@
+.task2-rule{
+    color: red; 
+    font-size: 1.5rem;
+}
+div.task3-rule{
+    background-image: url("Images/google.jpg");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+  }
+h1.task4-rule,h2.task4-rule{
+    padding: 0.5ems;
+    margin: 0.5ems;
+    border-style: dashed;
+}
+h1.task5-rule{
+    color: blue;
+}
+a.task5-rule{
+    text-decoration: none;
+    color: blue;
+}
+a.task5-rule:hover{
+    background-color: yellow;
+}
+div.task6-rule{
+    padding: 25px;
+    text-align: center;
+}
+a.task6-rule{
+    background-color: blue;
+    border: 5px solid black ;
+    text-decoration: none;
+    padding: 15px;
+    font-size: large;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+ a.task6-rule:hover{
+     background-color:purple;
+     color: white;
+ }
+

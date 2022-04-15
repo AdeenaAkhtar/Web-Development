@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .box{
+            border-style: solid;
+            border-color: #9ec1cf;
+            width: 35%;
+            padding: 2%;
+            margin: 2% 30%;
+            text-align: center;
+        }
+        .button{
+            width: 90%;
+            padding: 1.5%;
+            margin: 0.5% 5%;
+            background-color: #9ec1cf;
+            color: white;
+            border: solid aliceblue;
+            font-size: large;
+        }
+        h2{
+            margin: 0% 25% 3% 25%;
+            color: #9ec1cf;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <h2>Select any one option:</h2>
+    <input class="button" type="button" value="Generate Table" id="table">  
+    <input class="button" type="button" value="Calculate Power" id="power">  
+    <input class="button" type="button" value="Generate Sequence" id="sequence">  
+    <input class="button" type="button" value="Generate Odd No. / Even No." id="evenOdd">    
+   </div>
+   <div class="box" style="padding: 1% 2%;" >
+       <p id="result"> </p>
+   </div>
+    <script>
+        function generateTable()
+        {
+            var table = '';
+            var number = parseInt(prompt('Enter Number to Generate Table of: '));
+            for(let i = 1; i <= 10; i++) {
+                const result = i * number;
+                table += `${number} * ${("0" + i).slice(-2)} = ${("0" + result).slice(-2)}` + '\n';
+            }
+            document.getElementById('result').innerText = table;
+        } 
+        function calculatePower()
+        {
+            var power = '';
+            var base = parseInt(prompt('Enter the Value of Base: '));
+            var exponent = parseInt(prompt('Enter the Value of Exponent: '));
+            let result = Math.pow(base, exponent);
+            power += `${base} ^ ${(exponent)} = ${(result)}`;
+            document.getElementById('result').innerText = power;
+        }
+
+        function generateSequence()
+        {
+            let sequence = '{ ';
+            var limit = parseInt(prompt('Enter limit to Generate Sequence up to: '));
+            for(let i = 0; i <= limit; i++) {
+                if (i==limit){
+                    sequence += `${(i)} `;
+                }
+                else{
+                    sequence += `${(i)} , `;
+                }
+            }
+            sequence += '}'
+            document.getElementById('result').innerText = sequence;
+        }
+        function generateEvenOdd()
+        {
+            let sequence;
+            let type = prompt('Enter "O" for Odd and "E" for Even Sequence Generation: ');
+            if (type.toLowerCase() === 'o'){
+                sequence = '{ '
+                for(let i = 1; i <= 20; i += 2) {
+                    if (i==20){
+                        sequence += `${(i)} `;
+                    }
+                    else{
+                        sequence += `${(i)} , `;
+                    }
+                }
+                sequence += '}'
+            }
+            else if (type.toLowerCase() === 'e'){
+                sequence = '{ '
+                for(let i = 0; i <= 20; i += 2) {
+                    if (i==20){
+                        sequence += `${(i)} `;
+                    }
+                    else{
+                        sequence += `${(i)} , `;
+                    }
+                }
+                sequence += '}'
+            }
+            else{
+                sequence = 'Invalid Input'
+            }
+            document.getElementById('result').innerText = sequence;
+        }
+        window.onload = document.getElementById('table').onclick = generateTable;
+        window.onload = document.getElementById('power').onclick = calculatePower;
+        window.onload = document.getElementById('sequence').onclick = generateSequence;
+        window.onload = document.getElementById('evenOdd').onclick = generateEvenOdd;
+    </script>
+</body>
+</html>
