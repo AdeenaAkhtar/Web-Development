@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeena Akhtar | Web Engineering Labs</title>
+    <style>
+        body{
+            background-color: #E2D0D3;
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 0%;
+            color: #821C80;
+            text-align: center;
+        }
+        h3{
+            margin-top: 1%;
+            font-size: 25px;
+            color: #821C80;
+            text-align: center;
+        }
+        .box{
+            border-style: solid;
+            border-color: #821C80;
+            border-radius: 20px;
+            width: 40%;
+            padding: 2% 0;
+            margin: 0 30%;
+            text-align: center;
+            display: none;
+        }
+        .button{
+            width: 90%;
+            padding: 1.5%;
+            margin: 0.5%;
+            background-color: #D0A3BF;
+            color: white;
+            border: solid #821C80;
+            font-size: large;
+        }
+        .button-lg{
+            width: 38%;
+            padding: 1% 0;
+            margin: 0.5% 30% 0 31%;
+            background-color: #D0A3BF;
+            color: white;
+            border: solid #821C80;
+            border-radius: 40px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adeena Akhtar</h1>
+    <h3>02-131192-024</h3>
+    <input class="button-lg" type="button" value="LAB # 1" onclick="show('lab1')">  
+   <div class="box" id="lab1">
+    <input class="button" type="button" value="Task # 1" onclick="window.open('/Labs/Lab 1/Home.html', '_blank').focus();">  
+   </div>
+   <input class="button-lg" type="button" value="LAB # 2" onclick="show('lab2')">  
+   <div class="box" id="lab2">
+    <input class="button" type="button" value="Task # 1" onclick="window.open('/Labs/Lab 2/Task1.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 2" onclick="window.open('/Labs/Lab 2/Task2.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 3" onclick="window.open('/Labs/Lab 2/Task3.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 4" onclick="window.open('/Labs/Lab 2/Task4.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 5" onclick="window.open('/Labs/Lab 2/Task5.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 6" onclick="window.open('/Labs/Lab 2/Task6.html', '_blank').focus();">  
+   </div>
+   <input class="button-lg" type="button" value="LAB # 3" onclick="show('lab3')">  
+   <div class="box" id="lab3">
+    <input class="button" type="button" value="Task # 1" onclick="window.open('/Labs/Lab 3/Task 1.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 2" onclick="window.open('/Labs/Lab 3/Task 2.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 3" onclick="window.open('/Labs/Lab 3/Task 3.html', '_blank').focus();"> 
+    <input class="button" type="button" value="Task # 4" onclick="window.open('/Labs/Lab 3/Task 4.html', '_blank').focus();"> 
+   </div>
+   <input class="button-lg" type="button" value="LAB # 4" onclick="show('lab4')">  
+   <div class="box" id="lab4">
+    <input class="button" type="button" value="Task # 1" onclick="Lab4Task1()"> 
+    <input class="button" type="button" value="Task # 2" onclick="Lab4Task2()"> 
+    <input class="button" type="button" value="Task # 3" onclick="Lab4Task3()"> 
+    <input class="button" type="button" value="Task # 4" onclick="Lab4Task4()"> 
+   </div>
+   <input class="button-lg" type="button" value="LAB # 5" onclick="show('lab5')">  
+   <div class="box" id="lab5">
+     <input class="button" type="button" value="Task # 1" onclick="window.open('/Labs/Lab5/Task1.html', '_blank').focus();"> 
+     <input class="button" type="button" value="Task # 2" onclick="window.open('/Labs/Lab5/Task2.html', '_blank').focus();"> 
+     <input class="button" type="button" value="Task # 3" onclick="window.open('/Labs/Lab5/Task3.html', '_blank').focus();"> 
+     <input class="button" type="button" value="Task # 4" onclick="window.open('/Labs/Lab5/Task4.html', '_blank').focus();"> 
+    </div>
+    <input class="button-lg" type="button" value="LAB # 6" onclick="show('lab6')"> 
+    <div class="box" id="lab6">
+        <input class="button" type="button" value="Task # 1" onclick="Lab6Task1()"> 
+        <input class="button" type="button" value="Task # 2" onclick="Lab6Task2()"> 
+        <input class="button" type="button" value="Task # 3" onclick="Lab6Task3()"> 
+        <input class="button" type="button" value="Task # 4" onclick="Lab6Task4()">  
+        <input class="button" type="button" value="Task # 5" onclick="Lab6Task5()"> 
+        <input class="button" type="button" value="Task # 6" onclick="Lab6Task6()">  
+        <input class="button" type="button" value="Task # 7" onclick="Lab6Task7()"> 
+        <input class="button" type="button" value="Task # 8"  onclick="window.open('/Labs/Lab6/Task 8.html', '_blank').focus();"> 
+    </div>
+    <input class="button-lg" type="button" value="LAB # 7" onclick="show('lab7')"> 
+    <div class="box" id="lab7">
+        <input class="button" type="button" value="Task # 1" onclick="Lab7Task1()"> 
+        <input class="button" type="button" value="Task # 2" onclick="Lab7Task2()"> 
+        <input class="button" type="button" value="Task # 3" onclick="Lab7Task3()"> 
+        <input class="button" type="button" value="Task # 4" onclick="Lab7Task4()">  
+        <input class="button" type="button" value="Task # 5" onclick="Lab7Task5()"> 
+        <input class="button" type="button" value="Task # 6" onclick="Lab7Task6()">  
+        <input class="button" type="button" value="Task # 7" onclick="Lab7Task7()"> 
+        <input class="button" type="button" value="Task # 8" onclick="Lab7Task8()"> 
+    </div>
+    <script>
+        function show(divId) {
+            var x = document.getElementById(divId);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+    <script src="/Labs/Lab4/Lab4.js"></script>
+    <script src="/Labs/Lab6/Lab6.js"></script>
+    <script src="/Labs/Lab 7/Lab7.js"></script>
+</body>
+</html>

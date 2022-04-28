@@ -79,11 +79,11 @@
         function generateEvenOdd()
         {
             let sequence;
-            let type = prompt('Enter "O" for Odd and "E" for Even Sequence Generation: ');
+            var type = prompt('Enter "O" for Odd and "E" for Even Sequence Generation: ');
             if (type.toLowerCase() === 'o'){
                 sequence = '{ '
                 for(let i = 1; i <= 20; i += 2) {
-                    if (i==20){
+                    if (i==19){
                         sequence += `${(i)} `;
                     }
                     else{
@@ -109,10 +109,10 @@
             }
             document.getElementById('result').innerText = sequence;
         }
-        window.onload = document.getElementById('table').onclick = generateTable;
-        window.onload = document.getElementById('power').onclick = calculatePower;
-        window.onload = document.getElementById('sequence').onclick = generateSequence;
-        window.onload = document.getElementById('evenOdd').onclick = generateEvenOdd;
+        document.getElementById('table').onclick = generateTable;
+        document.getElementById('power').onclick = calculatePower;
+        document.getElementById('sequence').onclick = generateSequence;
+        document.getElementById('evenOdd').onclick = generateEvenOdd;
     </script>
 </body>
 </html>
