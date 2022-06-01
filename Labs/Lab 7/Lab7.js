@@ -50,14 +50,8 @@ function Lab7Task4(){
 //Task # 5: Creates an array consisting of only those elements that satisfy the condition checked by isPositive()
 // function with the help of appropriate javascript advance loops concept
 function Lab7Task5(){
-    const isPositive = (number) => {
-        if (number >= 0) {
-            return true;
-        }
-        else {
-            return false;
-    }
-    }
+    const isPositive = (number) => number >= 0 ? true : false;
+    isDriver = (a) => a >= 18 ? `At age ${a}: You can drive now...` : `At age ${a}: You can't drive yet...`;
     const numberArray = [1,-1,2,-2,3,-3,-4,-5];
     const positiveArray = [];
     let newArray = numberArray.forEach((num) => {

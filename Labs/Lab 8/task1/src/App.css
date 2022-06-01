@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation-name: App-logo-wave; 
+    animation-duration: 1.5s;        
+    animation-iteration-count: infinite; 
+    transform-origin: 70% 70%;    
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:#b922b9;;
+}
+
+.App-link {
+  color: #b922b9;
+}
+
+@keyframes App-logo-wave {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(20.0deg) }  
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(20.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(13.0deg) }
+ 60% { transform: rotate( 0.0deg) } 
+100% { transform: rotate( 0.0deg) }
+}
+
