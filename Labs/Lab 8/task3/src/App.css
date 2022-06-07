@@ -6,6 +6,57 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Input{
+  background-color: #b922b9;
+  border: solid white 3px;
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+  font-size: large;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+::placeholder { 
+  color: white;
+  opacity: 1; 
+}
+:-ms-input-placeholder { 
+  color: white;
+}
+::-ms-input-placeholder {
+  color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.Container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Enter{
+  background-color: white;
+  border: solid #b922b9 3px;
+  color: #b922b9;
+  padding: 0.5%;
+  border-radius: 10px;
+  width: 6%;
+  font-size: larger;
+  margin: 10px;
+  width: 70px;
+  text-align: center;
+}
+.Inpuy:active{
+  border: solid #b922b9 3px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,7 +65,7 @@
 }
 
 .App-header {
-  background-color: white;
+  background-color: #db9ddb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +73,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #b922b9;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
