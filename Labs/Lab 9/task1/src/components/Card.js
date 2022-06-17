@@ -6,6 +6,5 @@ const Card = ({id}) => {
 		<img src={`https://robohash.org/${id}/set_set4/?size=200x200`} alt="cats" />
 		</div>
 		);
-}
-
+};
 export default Card;

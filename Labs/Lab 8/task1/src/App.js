@@ -33,7 +33,6 @@ switch(days){
       break;
     }
 let date = `${day}, ${String(curDate.getDate()).padStart(2,'0')}/${String(curDate.getMonth()+1).padStart(2,'0')}/${curDate.getFullYear()}`;
-
 if (hour >= 1 && hour < 12){
   greetings = "Good Morning";
  }
@@ -43,7 +42,6 @@ else if (hour >= 12 && hour < 19){
 else{
   greetings = "Good Night";
 }
-
 function timeUpdate(){
   let curTime = new Date();
   time = `${String(hour > 12 ? curTime.getHours() - 12 : curTime.getHours() ).padStart(2,'0')}:${String(curTime.getMinutes()).padStart(2,'0')}:${String(curTime.getSeconds()).padStart(2,'0')} `;
@@ -71,5 +69,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

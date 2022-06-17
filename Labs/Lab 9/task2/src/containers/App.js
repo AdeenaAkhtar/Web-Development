@@ -3,7 +3,6 @@ import CardList from '../components/CardList';
 import Scroll from '../components/Scroll';
 import './App.css';
 import {Cats} from '../cats';
-
 class App extends Component {
 	render(){
 		return !Cats.length ?
@@ -18,5 +17,4 @@ class App extends Component {
 			);
 	}
 }
-
 export default App;

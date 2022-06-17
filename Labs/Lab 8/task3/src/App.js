@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-
 class App extends Component {
   calculate = () =>{
     let num1 = document.getElementById('num1').value;
@@ -27,8 +26,7 @@ class App extends Component {
           break;
       }
     }
-    }
-
+  }
   render(){
   return (
     <div className="App">
@@ -50,5 +48,4 @@ class App extends Component {
     </div>
   );}
 }
-
 export default App;

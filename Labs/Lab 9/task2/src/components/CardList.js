@@ -19,5 +19,4 @@ const CardList = ({cats}) => {
 		</div>
 		);
 }
-
 export default CardList;
